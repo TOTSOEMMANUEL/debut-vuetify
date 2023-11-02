@@ -8,6 +8,34 @@
               <span>NINDJA</span>
            </v-toolbar-title>
             <v-spacer></v-spacer>
+
+            <!-- dropdown menu1: debut -->
+            <v-menu transition="fab-transition">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          dark
+          color="primary"
+          v-bind="attrs"
+          v-on="on"
+        >
+        <v-icon left>mdi-chevron-down</v-icon>
+        <span>Menu</span>
+        </v-btn>
+      </template>
+      <v-list>
+        <v-list-item
+          v-for="link in links"
+          :key="link.text"
+          router :to="link.route">
+          <v-list-item-action>
+            <v-icon class="black--text">{{ link.icon }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-title>{{ link.text }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+            <!-- dropdown menu1: fin -->
+
            <v-btn text color="grey">
                 <span>Sign Out</span>
                 <v-icon right>mdi-logout</v-icon>
