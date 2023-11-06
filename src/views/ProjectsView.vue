@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-        <h1 class="subheading grey--text">projects</h1>
+        <h1 class="subheading grey--text">jai retirer projects</h1>
  
         <!-- <v-expansion-panels>
     <v-expansion-panel
