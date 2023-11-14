@@ -44,8 +44,11 @@
             <!-- dropdown menu1: fin -->
 
            <v-btn text color="grey">
-                <span>Sign Out</span>
+                
+                <router-link to="/TabloBord1">
+                  <span>Sign Out</span>
                 <v-icon right>mdi-logout</v-icon>
+                </router-link>
             </v-btn>
         </v-app-bar>
        <!-- </v-toolbar> -->
@@ -98,6 +101,7 @@ export default {
                 { icon: 'mdi-view-dashboard', text: 'Dashboard', route: '/' },
                 { icon: 'mdi-folder', text: 'My Projects', route: '/projects' },
                 { icon: 'mdi-account', text: 'Team', route: '/team' },
+                /* { icon: 'mdi-account', text: 'TabloBord1', route: '/TabloBord1' }, */
             ],
             snackbar:false
         };

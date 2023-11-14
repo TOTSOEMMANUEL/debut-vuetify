@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 import DashboardView from '../views/DashboardView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import TeamView from '../views/TeamView.vue'
+import TabloBord1View from '../views/TabloBord1View.vue'
+import DashbordPatientView from '../views/DashbordPatientView.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +24,16 @@ const routes = [
     path: '/team',
     name: 'team',
     component: TeamView
+  },
+  {
+    path: '/tabloBord1',
+    name: 'tabloBord1',
+    component: TabloBord1View
+  },
+  {
+    path: '/DashbordPatient',
+    name: 'DashbordPatient',
+    component: DashbordPatientView
   },
   {
     path: '/about',
